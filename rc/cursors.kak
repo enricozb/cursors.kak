@@ -3,6 +3,10 @@
 map global normal <c-d> ': sublime-multi-cursor<ret>'
 map global normal <c-e> ': sublime-swap-mode<ret>'
 
+# undo <c-d> selection
+map global normal <c-u> <a-space>
+
+
 # options for keeping track of whether or not we are in multi-cursor mode
 declare-option -hidden str sublime_cursor_mode 'single'
 
@@ -57,9 +61,6 @@ define-command -hidden sublime-multi-cursor %{ execute-keys -save-regs '' %sh{
 #     echo 'set-option buffer sublime_cursor_mode "single"<ret>'
 #   fi
 # }}
-
-# undo <c-d> selection
-map global normal <c-u> <a-space>
 
 # remove multiple selections
 map global normal <esc> ': set-option buffer sublime_cursor_mode "single"<ret><space>'
