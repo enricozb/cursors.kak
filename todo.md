@@ -1,8 +1,15 @@
-# kak-cursors To Do
+# kak-cursors - todo
 
-## Bugs
-- if you do `<c-d>` on a word, then `c`, then `<esc>`, you're now in normal
-  mode but also on sublime-multi mode.
+## features
+- add keybinging to force *N instead of default `<c-d>` behavior.
+  - this is for selecting single characters that don't have
+    whitespace around them, like selecting `=` in code like this
+    ```
+    a=1
+    b=2
+    c=3
+    ```
+    easily doable with `<c-e>` -> `*N`, but is this the best way?
 
-## Readme
+## readme
 - add recording of usage
