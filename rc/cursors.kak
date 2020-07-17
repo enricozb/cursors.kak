@@ -1,7 +1,7 @@
 # sublime-like multiple cursor behavior
 
 define-command sublime-multi-cursor %{
-  execute-keys %sh{
+  execute-keys -save-regs '' %sh{
     if [[ $kak_reg_hash = 1 ]] && [[ ${#kak_selection} = 1 ]]; then
       # if we are going to select whitespace
       if [[ $kak_reg_dot =~ "[[:space:]]*" ]]; then
@@ -30,3 +30,4 @@ define-command sublime-multi-cursor %{
 }
 
 map global normal <c-d> ': sublime-multi-cursor<ret>'
+map global normal <c-u> <a-space>
