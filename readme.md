@@ -11,10 +11,10 @@ too lazy to learn to use **%s**, **xs**, and **N**.
   a non-whitespace character. This modifies the `/` register.
 - **&lt;c-u&gt;** Remove last multiple selection. This can be achieved by default
   in Kakoune with **&lt;a-space&gt;**.
+- **&lt;c-e&gt;** Select the current character. Identical to `*N`.
 - **n** Skip current selection. This is not a special keybinding, this is
   default Kakoune behavior.
 - **&lt;space&gt;** in normal mode, this removes all of the multiple selections.
 
 ## todo
 See [todo](todo.md).
-
