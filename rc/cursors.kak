@@ -39,4 +39,4 @@ define-command sublime-multi-cursor %{
 
 map global normal <c-e> *N
 map global normal <c-d> ': sublime-multi-cursor<ret>'
-map global normal <c-u> <a-space>
+map global normal <c-u> <a-,>
